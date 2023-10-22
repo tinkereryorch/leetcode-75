@@ -2,9 +2,8 @@
 
 // Solution
 const gcdOfStrings = (str1, str2) => {
-    let x = '';
 
-    if (str1.concat(str2) != str2.concat(str1)) { return ''}
+    if (str1.concat(str2) != str2.concat(str1)) { return ''; }
 
     let gcd = (x, y) => {
         if (y === 0) {
@@ -14,7 +13,10 @@ const gcdOfStrings = (str1, str2) => {
         return gcd(y, x % y);
     }
 
-    let wordParticle = gcde(str1.length, str2.length);
+    let wordParticle =  gcd(str1.length, str2.length);
 
     return str1.slice(0, wordParticle);
 }
+
+let result = gcdOfStrings('ABABAB', 'AB');
+console.log('The gcd is:', result);
