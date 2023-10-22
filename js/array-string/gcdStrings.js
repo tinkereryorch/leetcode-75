@@ -1,4 +1,4 @@
-// LeetCode 1768 - Greatest Common Divisor of Strings
+// LeetCode 1071 - Greatest Common Divisor of Strings
 
 // Solution
 const gcdOfStrings = (str1, str2) => {
