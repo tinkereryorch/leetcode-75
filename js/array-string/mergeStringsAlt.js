@@ -1,4 +1,4 @@
-//  LeetCode 1768 - Merge Strings Alternately
+// LeetCode 1768 - Merge Strings Alternately
 
 // Solution 1
 const mergeAlternately = (word1, word2) => {
