@@ -19,7 +19,6 @@ const kidsWithCandies = (candies, extraCandies) => {
 }
 
 // Solution 2
-
 var kidsWithCandies2 = function(candies, extraCandies) {
     let results = [];
     let max = Math.max(...candies);
