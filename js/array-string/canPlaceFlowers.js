@@ -63,7 +63,27 @@ const checkAdjacency = (flowerbed) => {
     return possibleSpace;
 }
 
-let flowerbed = [0, 0];
-let n = 2;
+let flowerbed = [1, 0, 0, 0, 1];
+let n = 1;
 let result = canPlaceFlowers(flowerbed, n);
 console.log(result);
+
+// Solution 2 using falsy values
+const checkAdjacency2 = (flowerbed) => {
+    let possibleSpace = 0; 
+    let prev = 0;
+    let next = 0;
+
+    for(let i = 0; i < flowerbed.length; i++){
+        prev = i - 1;
+        next = i + 1;
+
+        if (!flowerbed[prev] && !flowerbed[i] && !flowerbed[next]) {
+            ++possibleSpace;
+            flowerbed[i] = 1;
+            continue;
+        }
+    }
+
+    return possibleSpace;
+}
