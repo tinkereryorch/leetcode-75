@@ -3,11 +3,11 @@
 
 // Solution 
 const canPlaceFlowers = (flowerbed, n) => {
-    const zeroCount = calculateAmountOfZeroes(flowerbed);
+    const zeroCount = calcualteZeroCount(flowerbed);
     console.log('The amount of zeroes in the flowerbed is: ', zeroCount);
 }
 
-const calculateAmountOfZeroes = (flowerbed) => {
+const calcualteZeroCount = (flowerbed) => {
     let zeroCount = 0;
 
     for (let i = 0; i < flowerbed.length; i++) {
