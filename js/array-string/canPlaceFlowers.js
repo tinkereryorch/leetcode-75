@@ -3,7 +3,7 @@
 
 // Solution 1
 const canPlaceFlowers = (flowerbed, n) => {
-    const zeroCount = calcualteZeroCount(flowerbed);
+    const zeroCount = calculateZeroCount(flowerbed);
 
     if (zeroCount >= n) {
         let availableSpaces = checkAdjacency(flowerbed);        
@@ -14,7 +14,7 @@ const canPlaceFlowers = (flowerbed, n) => {
 }
     
 
-const calcualteZeroCount = (flowerbed) => {
+const calculateZeroCount = (flowerbed) => {
     let zeroCount = 0;
 
     for (let i = 0; i < flowerbed.length; i++) {
