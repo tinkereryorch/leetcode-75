@@ -2,8 +2,9 @@
 
 // Solution
 const reverseVowels = (s) => {
-    console.log(s);
+    let low = 0;
+    let high = s.length - 1;
 }
 
-let myString = "Hello";
+let myString = "lo";
 reverseVowels(myString);
