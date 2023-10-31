@@ -8,7 +8,6 @@ const reverseVowels = (s) => {
     let stringArray = s.split('');
 
     while (low <= high) {
-
         if(vowels.includes(stringArray[low]) && vowels.includes(stringArray[high])) {
             swapVowels(stringArray, low, high);
             ++low;
