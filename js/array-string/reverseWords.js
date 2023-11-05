@@ -2,11 +2,17 @@
 
 // Solution
 const reverseWords = function(s) {
+    let cleanArray = [];
+
     let trimmedString = s.trim();
     let splitString = trimmedString.split(' ');
-    return splitString.reverse();
+
+    cleanArray = splitString.filter((word) => word.length > 0);
+    cleanArray.reverse();
+
+    return cleanArray;
 }
 
-let myString = '  Hello World!  ';
+let myString = 'a good  example';
 let result = reverseWords(myString);
 console.log(result);
