@@ -37,3 +37,17 @@ let nums = [1, 2, 3, 4];
 let result = productExceptSelf(nums);
 console.log(nums);
 console.log(result);
+
+// Solution 2
+const productExceptSelf2 = (nums) => {
+    let result = [];
+    let prefix = 1;
+    let suffix = 1;
+
+    for (let i = 0; i < nums.length; i++) {
+        result[i] = prefix;
+        prefix *= nums[i];
+    }
+
+    console.log(`Result after prefix is: ${result}`);
+}
