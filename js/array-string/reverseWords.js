@@ -4,7 +4,7 @@
 const reverseWords = function(s) {
     let trimmedString = s.trim();
     let splitString = trimmedString.split(' ');
-    return splitString;
+    return splitString.reverse();
 }
 
 let myString = '  Hello World!  ';
