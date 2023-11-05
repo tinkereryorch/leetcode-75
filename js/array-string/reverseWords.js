@@ -2,7 +2,9 @@
 
 // Solution
 const reverseWords = function(s) {
-    return s.trim();
+    let trimmedString = s.trim();
+    let splitString = trimmedString.split(' ');
+    return splitString;
 }
 
 let myString = '  Hello World!  ';
