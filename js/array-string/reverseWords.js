@@ -2,7 +2,7 @@
 
 // Solution
 const reverseWords = function(s) {
-
+    return s.trim();
 }
 
 let myString = '  Hello World!  ';
