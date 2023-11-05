@@ -1,6 +1,6 @@
 // LeetCode 238 - Product of Array Except Self
 
-// Solution
+// Solution 1
 const productExceptSelf = function(nums) {
     let prefix = [];
     let suffix = [];
