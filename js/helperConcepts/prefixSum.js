@@ -1,3 +1,5 @@
+// Prefix sum is also known as cumulative sum, inclusive scan or simply scan
+
 const prefixSum = (numberList) => {
     const resultArray = [];
     resultArray[0] = numberList[0];
