@@ -1,11 +1,8 @@
 const prefixSum = (numberList) => {
-
-    const arraySize = numberList.length;
     const resultArray = [];
-
     resultArray[0] = numberList[0];
 
-    for (let i = 1; i < arraySize; i++) {
+    for (let i = 1; i < numberList.length; i++) {
         resultArray[i] = resultArray[i - 1] + numberList[i];
     }
 
