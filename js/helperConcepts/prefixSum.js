@@ -11,6 +11,6 @@ const prefixSum = (numberList) => {
     return resultArray;
 }
 
-let testArray = [2, 3, 7, 9];
+let testArray = [15, 10, 25, 5, 10, 20];
 let result = prefixSum(testArray);
 console.log(result);
