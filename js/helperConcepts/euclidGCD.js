@@ -2,3 +2,6 @@
 const calculateGCD = (x, y) => {
 
 }
+
+let result = calculateGCD(6, 36);
+console.log(result);
