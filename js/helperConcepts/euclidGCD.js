@@ -1,4 +1,4 @@
 // find Greatest Common Divisor using Euclid's algorithm
-const calculateGCD = (numberPair) => {
+const calculateGCD = (x, y) => {
 
 }
