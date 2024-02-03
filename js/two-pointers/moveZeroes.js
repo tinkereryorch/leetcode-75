@@ -19,5 +19,14 @@ const moveZeroes = (nums) => {
     return nums;
 }
 
+// Solution 2
+const moveZeroes2 = (nums) => {
+    nums.sort((a, b) => (a === 0) - (b === 0));
+}
+
 let result = moveZeroes([0, 0, 1, 3]);
 console.log(result);
+
+let nums = [0, 0, 1, 3];
+moveZeroes2(nums);
+console.log(nums);
